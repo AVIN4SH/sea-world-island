@@ -28,11 +28,17 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ title, value, total }) => {
   return (
-    <div className="bg-gray-50 rounded-lg p-4 text-center">
-      <h3 className="text-lg font-semibold text-gray-700 mb-2">{title}</h3>
+    <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center transition-colors duration-200">
+      <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
+        {title}
+      </h3>
       <p className="text-3xl font-bold text-accent">
         {value}
-        {total && <span className="text-xl text-gray-500">/{total}</span>}
+        {total && (
+          <span className="text-xl text-gray-500 dark:text-gray-400">
+            /{total}
+          </span>
+        )}
       </p>
     </div>
   );
