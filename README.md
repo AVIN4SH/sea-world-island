@@ -23,6 +23,7 @@ Sea World Islands is a web application that allows users to create and manipulat
 
 ## Project Structure
 
+```
 sea-world-islands/
 ├── public/
 ├── src/
@@ -31,6 +32,7 @@ sea-world-islands/
 │ │ ├── Controls.tsx
 │ │ ├── Grid.tsx
 │ │ └── Statistics.tsx
+│ │ └── ThemeToggle.tsx
 │ ├── utils/
 │ │ ├── gridUtils.ts
 │ │ └── islandDetection.ts
@@ -45,6 +47,7 @@ sea-world-islands/
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
+```
 
 ## Getting Started
 
@@ -77,6 +80,10 @@ To run the test suite, use the following command:
 npm test
 ```
 
+## Output
+
+<img src="./public/Test.png" alt="output of npm test" />
+
 ## How It Works
 
 1. The main `App` component manages the state of the grid and its dimensions.
@@ -85,10 +92,15 @@ npm test
 4. The `Statistics` component displays information about the current state of the world.
 5. Utility functions in `gridUtils.ts` and `islandDetection.ts` handle grid manipulation and island counting.
 
+
+## Home Page
+
+<img src="./public/HomePage.png" alt="output of npm test" />
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the <a href="https://opensource.org/license/MIT">MIT License</a>.
